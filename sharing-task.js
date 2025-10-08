@@ -89,3 +89,65 @@ reusable functions that solve specific tasks. This activity encourages:
 // - Explain how your team approached the design and testing process
 
 // ✅ Bonus: Can you extend any of the functions to be more flexible or reusable?
+
+// ============================================
+// 🧩 Task 1: Generate Attendee Badge
+// ============================================
+
+/**
+ * Generates a badge string for an attendee.
+ * @param {string} name - The attendee's name.
+ * @param {string} role - The attendee's role.
+ * @returns {string} - A formatted badge string.
+ */
+function generateBadge(name, role) {
+    const formattedRole = role.charAt(0).toUpperCase() + role.slice(1).toLowerCase();
+    return `Name: ${name}, Role: ${formattedRole}`;
+}
+
+// Example Tests:
+console.log(generateBadge("Alice", "speaker")); // Name: Alice, Role: Speaker
+console.log(generateBadge("Bob", "organizer")); // Name: Bob, Role: Organizer
+
+
+// ============================================
+// Task 2: Calculate Event Cost
+// ============================================
+
+/**
+ * Calculates the total event cost, with discounts.
+ * @param {number} attendees - Number of attendees.
+ * @param {number} costPerAttendee - Cost per attendee.
+ * @returns {number} - Total cost after any discounts.
+ */
+function calculateEventCost(attendees, costPerAttendee) {
+    let total = attendees * costPerAttendee;
+    if (attendees > 100) {
+        total *= 0.90; // Apply 10% discount
+    }
+    return total;
+}
+
+// Example Tests:
+console.log(calculateEventCost(50, 20));    // 1000
+console.log(calculateEventCost(150, 20));   // 2700 (with discount)
+
+
+// ============================================
+// Task 3: Validate Email
+// ============================================
+
+/**
+ * Validates a basic email format.
+ * @param {string} email - The email to validate.
+ * @returns {boolean} - True if valid, false otherwise.
+ */
+function validateEmail(email) {
+    return email.includes("@") && email.includes(".");
+}
+
+// Example Tests:
+console.log(validateEmail("user@example.com")); // true
+console.log(validateEmail("invalid-email"));    // false
+
+
