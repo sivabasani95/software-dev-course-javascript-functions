@@ -101,7 +101,7 @@ function printNames(nameList) {
 }
 
 // ============================================
-// 🔁 Using the Functions
+// Using the Functions
 // ============================================
 
 // Script 1 - Greeting multiple users
