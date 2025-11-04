@@ -123,5 +123,3 @@ function greetUsers(names) {
         greetUser(names[i]);
     }
 }
-
-
