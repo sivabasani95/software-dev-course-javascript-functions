@@ -38,8 +38,8 @@ console.log("Welcome, Bob!");
 console.log("Welcome, Charlie!");
 
 // Script 2 - Sum calculation
-// let num1 = 5, num2 = 10;
-// let sum = num1 + num2;
+let num1 = 5, num2 = 10;
+let sum = num1 + num2;
 console.log("The sum of 5 and 10 is " + sum);
 
 // Script 3 - Product calculation
