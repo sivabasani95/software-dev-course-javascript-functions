@@ -78,13 +78,6 @@ function greetUser(name) {
     console.log("Welcome, " + name + "!");
 }
 
-// Function 5: Greet multiple users
-function greetUsers(names) {
-    for (let i = 0; i < names.length; i++) {
-        greetUser(names[i]);
-    }
-}
-
 // Function 2: Calculate sum of two numbers
 function calculateSum(a, b) {
     return a + b;
@@ -123,4 +116,12 @@ console.log("The product of " + num1 + " and " + num2 + " is " + product);
 
 // Script 4 - Print names from a list
 printNames(users);
+
+// Function 5: Greet multiple users
+function greetUsers(names) {
+    for (let i = 0; i < names.length; i++) {
+        greetUser(names[i]);
+    }
+}
+
 
